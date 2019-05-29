@@ -1,16 +1,15 @@
-import React from "react";
-import { Provider } from "react-redux";
+import React from 'react';
+import { Provider } from 'react-redux';
 
-import store from "./store";
+import store from './store';
+import TodoList from './TodoList';
 
 function App() {
-    return (
-        <Provider store={store}>
-            <div>
-                <h1>Hello</h1>
-            </div>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <TodoList />
+    </Provider>
+  );
 }
 
 export default App;
